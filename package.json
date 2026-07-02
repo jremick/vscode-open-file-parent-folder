@@ -1,0 +1,66 @@
+{
+  "name": "open-file-parent-folder",
+  "displayName": "Open File Parent Folder",
+  "description": "When VS Code opens a standalone local file, reopen the window on a useful filesystem root.",
+  "version": "0.0.13",
+  "publisher": "local",
+  "private": true,
+  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jremick/vscode-open-file-parent-folder.git"
+  },
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "extensionKind": [
+    "ui"
+  ],
+  "capabilities": {
+    "untrustedWorkspaces": {
+      "supported": true
+    }
+  },
+  "activationEvents": [
+    "*",
+    "onStartupFinished",
+    "onLanguage:markdown",
+    "onLanguage:prompt",
+    "onCustomEditor:vscode.markdown.preview.editor"
+  ],
+  "main": "./extension.js",
+  "scripts": {
+    "package": "scripts/package.sh",
+    "install:local": "scripts/install.sh"
+  },
+  "contributes": {
+    "configuration": {
+      "title": "Open File Parent Folder",
+      "properties": {
+        "openFileParentFolder.enabled": {
+          "type": "boolean",
+          "default": true,
+          "description": "Reopen standalone files in their parent folder."
+        },
+        "openFileParentFolder.rootMode": {
+          "type": "string",
+          "enum": [
+            "parent",
+            "filesystemRoot",
+            "home"
+          ],
+          "default": "parent",
+          "description": "Workspace folder to open for standalone files."
+        },
+        "openFileParentFolder.closeAuxiliaryUi": {
+          "type": "boolean",
+          "default": true,
+          "description": "Close the auxiliary bar and panel after reopening the workspace."
+        }
+      }
+    }
+  }
+}
