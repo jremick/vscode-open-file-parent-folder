@@ -1,11 +1,11 @@
 {
   "name": "open-file-parent-folder",
   "displayName": "Open File Parent Folder",
-  "description": "When VS Code opens a standalone local file, reopen the window on a useful filesystem root.",
+  "description": "When VS Code opens a standalone local file, reopen the window on a useful parent or filesystem root.",
   "version": "0.0.13",
   "publisher": "local",
   "private": true,
-  "license": "UNLICENSED",
+  "license": "Apache-2.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/jremick/vscode-open-file-parent-folder.git"

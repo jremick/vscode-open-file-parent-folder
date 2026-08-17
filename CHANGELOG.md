@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- Prepared the repository for public-alpha use with Apache-2.0 licensing, public-facing documentation, and a private security reporting path.
+
 ## 0.0.13
 
 - Opens filesystem-root mode through a generated `.code-workspace` file instead of opening `/` directly.

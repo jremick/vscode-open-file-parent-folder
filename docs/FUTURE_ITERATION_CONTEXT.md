@@ -67,5 +67,5 @@ Keep these best-effort and command-existence checked; command names vary across 
 - Add a smoke-test script for macOS that opens a temporary `.md` file, checks `code --status`, inspects the debug log, and reports likely failure modes.
 - Make root workspace excludes configurable.
 - Add a command to show the generated workspace path and debug log path.
-- Consider signing or attaching VSIX files to private GitHub releases if this becomes more than a personal repo.
+- Consider signing or attaching VSIX files to GitHub releases if this becomes more than a personal alpha project.
 - Revisit the Workspace Trust tradeoff if VS Code exposes a narrower way to trust only the generated filesystem-root workspace.

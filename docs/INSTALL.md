@@ -1,12 +1,12 @@
 # Install Details
 
-This repo is intended for personal private installs on macOS systems where VS Code is the Markdown file handler.
+This repository is intended for personal installs on macOS systems where VS Code is the Markdown file handler.
 
 ## Prerequisites
 
 - VS Code stable or Insiders installed in `/Applications`.
 - The VS Code `code` CLI on `PATH`, or the standard app bundle path available.
-- GitHub access to this private repository.
+- Git access to this repository.
 - User-level VS Code settings access.
 
 ## Install From VSIX

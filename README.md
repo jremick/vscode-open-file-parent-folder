@@ -1,14 +1,14 @@
 # VS Code Open File Parent Folder
 
-Private personal VS Code extension for the macOS "open this file" workflow.
+Small macOS-focused VS Code extension for the "open this file" workflow.
 
 When VS Code is opened from Finder or LaunchServices on a standalone file, this extension reopens the window on a useful workspace root, reveals the file in Explorer, and can close the auxiliary/chat UI. With the settings below, `.md` files open as rendered Markdown previews while the Explorer is rooted at the macOS filesystem root.
 
-Status: personal private build. Current version: `0.0.13`. This is not published to the VS Code Marketplace.
+Status: public alpha. Current version: `0.0.13`. This is not published to the VS Code Marketplace, and its behavior and configuration may change.
 
 ## Quick Install
 
-From a clone of this private repo:
+From a clone of this repository:
 
 ```bash
 scripts/install.sh
@@ -102,3 +102,15 @@ If `code` is not on `PATH`, use `/Applications/Visual Studio Code.app/Contents/R
 - [Install details](docs/INSTALL.md)
 - [Future iteration context](docs/FUTURE_ITERATION_CONTEXT.md)
 - [Changelog](CHANGELOG.md)
+
+## Support
+
+Use [GitHub Issues](https://github.com/jremick/vscode-open-file-parent-folder/issues) for reproducible bugs and focused feature requests. This is a personal alpha project, so support and response times are best effort.
+
+## Security
+
+Do not report suspected vulnerabilities in a public issue. See [SECURITY.md](SECURITY.md) for the private reporting path.
+
+## License
+
+Licensed under the [Apache License 2.0](LICENSE).
